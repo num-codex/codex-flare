@@ -6,7 +6,7 @@ import json
 from query_parser.codex.codex_parser import parse_codex_query_string
 from query_parser.codex.codex_parser import curate_codex_json
 
-
+'''
 class TestCurateCodexJson(unittest.TestCase):
     def test_curator(self):
         print("Starting Curation Test!")
@@ -23,19 +23,18 @@ class TestCurateCodexJson(unittest.TestCase):
         #print(out)
         self.maxDiff=None
         message = "Curation did not work! Check single vs double quotes in json.dumps"
-        '''
+
         print(out)
         print(testCaseGT_string)
         print(type(out))
         print(type(testCaseGT_string))
-        '''
+
         self.assertEqual(out, testCaseGT_string, message)
         print("Curation Test finished!")
 
         testCase_file.close()
         testCaseGT_file.close()
 
-'''
 class TestParseCodexQueryString(unittest.TestCase):
     print("Start Level 1 Testing!")
 

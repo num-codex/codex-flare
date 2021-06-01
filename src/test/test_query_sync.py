@@ -47,21 +47,19 @@ class TestRunCodexQuery(unittest.TestCase):
                                            query_syntax=query_syntax, response_type=response_type)
                     instructionSet.append(singleInstruction)
 
+                    print(query_syntax)
+                    response_list.append(run_codex_query(singleInstruction))
+                    #time.sleep(5)
+                    '''
                     try:
                        response_list.append(run_codex_query(singleInstruction))
                        
                     except TypeError:
-                        print(query_input)
+                        #print(query_input)
                         print("This one")
-                        exit()
-                    
-                            
+                        #exit()
+                    '''
 
-
-        #print(testCase_content_list)
-        #print(instructionSet)
-
-        pass
 
 
     print("Finshed Query Sync Test!")
