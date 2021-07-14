@@ -1,1 +1,1 @@
-python3 run_server.py $DEBUG
+uwsgi --ini uwsgi.ini
